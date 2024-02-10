@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="onInit()">
+    <h1 class="smiley" onclick="onInit()"></h1>
+    <h1 class="timer"><span class="seconds">00</span>:<span class="milli-seconds">000</span></h1>
+    <h2 class="user-msg"></h2>
+
+    <button onclick="setGameLevel(4)">Beginner</button>
+    <button onclick="setGameLevel(8)">Medium</button>
+    <button onclick="setGameLevel(12)">Expert</button>
+    <button onclick="onManualMines()">manual mode</button>
+
+    <table class="board-container">
+        <tbody class="board">
+        </tbody>
+    </table>
+
+    <h2 onclick="activateHint()"></h2>
+    <button onclick="safeClick()">safe click</button>
+    <button onclick="MineExterminator()">delete mines</button>
+    <button onclick="activateHint()">hint!</button>
+    <button onclick="activateMegaHint()">mega hint</button>
+    <button onclick="darkMode()">dark mode</button>
+
+    <div class="hints">
+
+    </div>
+
+    <p class="footer">Made By Leanne Borowitz</p>
+
+    <script src="js/ult.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/mines.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
